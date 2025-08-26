@@ -20,6 +20,7 @@
                 <li><a href="#recursos">Recursos</a></li>
                 <li><a href="#exercicios">Exercícios</a></li>
                 <li><a href="#fluxo-trabalho">Fluxo</a></li>
+                <li><a href="#resolucao-conflitos">Conflitos</a></li>
                 <li><a href="#contato">Contato</a></li>
             </ul>
         </nav>
@@ -128,7 +129,7 @@
         </section>
         
         <section id="historico">
-            <h2>Histórico de Commits</h2>
+            <h2>📅 Histórico de Commits</h2>
             <div class="commit-history">
                 <div class="commit-item">
                     <span class="commit-hash">abc1234</span>
@@ -143,6 +144,11 @@
                 <div class="commit-item">
                     <span class="commit-hash">ghi9012</span>
                     <span class="commit-message">Seção de funcionalidades</span>
+                    <span class="commit-date">2024-01-15</span>
+                </div>
+                <div class="commit-item">
+                    <span class="commit-hash">jkl3456</span>
+                    <span class="commit-message">Adicionar seção de comandos</span>
                     <span class="commit-date">2024-01-15</span>
                 </div>
             </div>
@@ -210,6 +216,31 @@
                     <div class="step-number">3</div>
                     <h3>Repository</h3>
                     <p>Histórico de commits salvos</p>
+                </div>
+            </div>
+        </section>
+        
+        <section id="resolucao-conflitos">
+            <h2>⚠️ Resolução de Conflitos</h2>
+            <div class="conflict-resolution">
+                <div class="conflict-step">
+                    <h3>1. Identificar o Conflito</h3>
+                    <p>Git mostrará mensagens de conflito nos arquivos</p>
+                    <code>CONFLICT (content): Merge conflict in arquivo.txt</code>
+                </div>
+                <div class="conflict-step">
+                    <h3>2. Editar o Arquivo</h3>
+                    <p>Remova os marcadores de conflito e escolha o conteúdo correto</p>
+                    <pre><code>&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD
+Seu código
+=======
+Código do repositório
+&gt;&gt;&gt;&gt;&gt;&gt;&gt; branch-name</code></pre>
+                </div>
+                <div class="conflict-step">
+                    <h3>3. Resolver e Commitar</h3>
+                    <p>Após resolver, adicione e faça commit da resolução</p>
+                    <code>git add . && git commit -m "Resolver conflito"</code>
                 </div>
             </div>
         </section>
