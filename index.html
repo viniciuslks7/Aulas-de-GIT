@@ -15,6 +15,7 @@
                 <li><a href="#funcionalidades">Funcionalidades</a></li>
                 <li><a href="#comandos">Comandos</a></li>
                 <li><a href="#comandos-avancados">Comandos Avançados</a></li>
+                <li><a href="#configuracao">Configuração</a></li>
                 <li><a href="#dicas">Dicas</a></li>
                 <li><a href="#historico">Histórico</a></li>
                 <li><a href="#recursos">Recursos</a></li>
@@ -86,6 +87,10 @@
                         <code>git checkout nome-branch</code>
                         <span>Mudar para branch</span>
                     </div>
+                    <div class="command">
+                        <code>git merge nome-branch</code>
+                        <span>Mesclar branch na atual</span>
+                    </div>
                 </div>
                 <div class="command-group">
                     <h3>Remoto</h3>
@@ -96,6 +101,38 @@
                     <div class="command">
                         <code>git push origin main</code>
                         <span>Enviar para repositório remoto</span>
+                    </div>
+                    <div class="command">
+                        <code>git pull origin main</code>
+                        <span>Baixar mudanças do remoto</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="configuracao">
+            <h2>⚙️ Configuração Inicial do Git</h2>
+            <div class="config-steps">
+                <div class="config-step">
+                    <h3>1. Configurar Identidade</h3>
+                    <div class="command">
+                        <code>git config --global user.name "Seu Nome"</code>
+                        <span>Definir nome do usuário</span>
+                    </div>
+                    <div class="command">
+                        <code>git config --global user.email "seu@email.com"</code>
+                        <span>Definir email do usuário</span>
+                    </div>
+                </div>
+                <div class="config-step">
+                    <h3>2. Configurações Adicionais</h3>
+                    <div class="command">
+                        <code>git config --global init.defaultBranch main</code>
+                        <span>Definir branch padrão como main</span>
+                    </div>
+                    <div class="command">
+                        <code>git config --global core.editor "code --wait"</code>
+                        <span>Definir VS Code como editor padrão</span>
                     </div>
                 </div>
             </div>
@@ -178,7 +215,7 @@
         </section>
         
         <section id="exercicios">
-            <h2>Exercícios Práticos</h2>
+            <h2>🧪 Exercícios Práticos</h2>
             <div class="exercises">
                 <div class="exercise">
                     <h3>Exercício 1: Primeiro Repositório</h3>
@@ -196,6 +233,15 @@
                         <li>Verifique o status com <code>git status</code></li>
                         <li>Adicione as mudanças</li>
                         <li>Faça um commit com mensagem descritiva</li>
+                    </ol>
+                </div>
+                <div class="exercise">
+                    <h3>Exercício 3: Configuração Git</h3>
+                    <ol>
+                        <li>Configure seu nome e email</li>
+                        <li>Defina a branch padrão como main</li>
+                        <li>Configure seu editor preferido</li>
+                        <li>Verifique as configurações com <code>git config --list</code></li>
                     </ol>
                 </div>
             </div>
